@@ -1,0 +1,11 @@
+<div class=“navbar”>
+  <h1> Create a new Cocktail</h1>
+</div>
+
+<p> Formulaire: </p>
+
+<%= simple_form_for [@cocktail] do |f| %>
+ <%= f.input :name %>
+ <%= f.submit "add a cocktail", class: "btn btn-primary" %>
+<% end %>
+
